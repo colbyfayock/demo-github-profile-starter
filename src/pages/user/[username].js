@@ -3,8 +3,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { createTweetAction, openTweet } from '@lib/social';
-
 import Layout from '@components/Layout';
 import Container from '@components/Container';
 import Button from '@components/Button';
@@ -14,19 +12,6 @@ import images from '@data/images';
 import styles from '@styles/User.module.scss'
 
 export default function User({ user }) {
-
-  function handleOnTwitterClick(event) {
-    event.preventDefault();
-
-    const message = createTweetAction({
-      message: [
-        `Check out ${user.login}'s GitHub profile`,
-        `${window.location.origin}${window.location.pathname}`
-      ]
-    });
-
-    openTweet({ message });
-  }
 
   return (
     <Layout>
@@ -60,13 +45,6 @@ export default function User({ user }) {
             </p>
           </div>
         </div>
-
-
-        <h2 className={styles.header}>Share Profile</h2>
-
-        <p>
-          <Button onClick={handleOnTwitterClick}>Share</Button>
-        </p>
 
         <h2 className={styles.header}>Try Another Profile</h2>
 
