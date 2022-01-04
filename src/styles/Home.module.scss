@@ -1,0 +1,16 @@
+@import "@styles/settings/__settings";
+
+.header {
+  font-size: 2em;
+}
+
+.form {
+
+  [type="text"] {
+    font-size: 1.1em;
+    border: solid 1px gray;
+    background: white;
+    padding: .4em .6em;
+  }
+
+}

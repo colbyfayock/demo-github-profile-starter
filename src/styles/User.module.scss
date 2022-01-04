@@ -1,0 +1,63 @@
+@import "@styles/settings/__settings";
+
+.title {
+  font-size: 3em;
+}
+
+.username {
+  font-size: 1.5em;
+  color: gray;
+  margin-top: -1em;
+}
+
+.header {
+
+  font-size: 2em;
+  margin-top: 2em;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+}
+
+.profile {
+  display: flex;
+}
+
+.profileContent {
+
+  flex-grow: 1;
+  padding-left: 2em;
+
+  p,
+  ul {
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+  }
+
+}
+
+.profileBio {
+  font-size: 1.8em;
+}
+
+.profileCompany,
+.profileStats,
+.profileTwitter {
+  font-size: 1.2em;
+}
+
+.profileStats {
+
+  list-style: none;
+  padding: 0;
+
+  strong {
+    font-weight: 600;
+  }
+
+}
